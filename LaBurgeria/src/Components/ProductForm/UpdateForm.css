@@ -1,0 +1,100 @@
+/* UpdateForm.css */
+
+.banner-container {
+    margin-bottom: 20px; /* Espaciado inferior del banner */
+}
+
+.banner-wrapper {
+    display: flex; /* Para centrar la imagen si es necesario */
+    justify-content: center; /* Centrar contenido horizontalmente */
+}
+
+.banner-image {
+    width: 100%; /* Hacer la imagen responsive */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+
+.form-container {
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 20px auto; /* Centrar formulario en la página */
+    padding: 20px; /* Espaciado interno del formulario */
+    border: 1px solid #ccc; /* Bordes para el formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.form-header {
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px; /* Espaciado inferior del título */
+}
+
+.form-title {
+    font-size: 1.5rem; /* Tamaño de fuente del título */
+    color: #333; /* Color del texto del título */
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column; /* Coloca los campos en columna */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espaciado inferior entre grupos de campos */
+}
+
+.field-container {
+    display: flex;
+    flex-direction: column; /* Coloca el label y el campo en columna */
+}
+
+label {
+    font-weight: bold; /* Negrita para las etiquetas */
+    margin-bottom: 5px; /* Espaciado inferior de las etiquetas */
+    color: #555; /* Color del texto de las etiquetas */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+select {
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde de los campos */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente de los campos */
+}
+
+input[type="file"] {
+    padding: 5px; /* Espaciado interno para el campo de archivos */
+}
+
+.error {
+    color: red; /* Color para los mensajes de error */
+    font-size: 0.8rem; /* Tamaño de fuente para los errores */
+    margin-top: 5px; /* Espaciado superior de los errores */
+}
+
+.button-container {
+    margin-top: 20px; /* Espaciado superior para el botón */
+    text-align: center; /* Centrar el botón */
+}
+
+button {
+    padding: 10px 15px; /* Espaciado interno del botón */
+    font-size: 1rem; /* Tamaño de fuente del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    background-color: #4CAF50; /* Color del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+button:disabled {
+    background-color: #ccc; /* Color del botón deshabilitado */
+    cursor: not-allowed; /* Cursor de no permitido */
+}
+
+button:hover:not(:disabled) {
+    background-color: #45a049; /* Color del botón al pasar el mouse */
+}

@@ -1,0 +1,37 @@
+.menu-list {
+    padding: 30px; /* Espaciado interno para el contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más profunda */
+    background-color: #f9f9f9; /* Fondo más claro para el contenedor */
+    max-width: 800px; /* Ancho máximo para el contenedor */
+    margin: auto; /* Centrar el contenedor */
+    font-family: 'Montserrat', sans-serif; /* Aplicar la fuente Montserrat */
+
+}
+
+.menu-list h2 {
+    font-size: 32px; /* Tamaño de fuente del título */
+    color: #2c3e50; /* Color más oscuro para el texto */
+    margin-bottom: 10px; /* Margen inferior para separación */
+    text-align: center; /* Centrar el texto */
+    font-weight: bold; /* Negrita para el título */
+}
+
+.menu-list > div {
+    margin-bottom: 20px; /* Margen inferior para separar cada menú */
+    padding: 20px; /* Espaciado interno para cada menú */
+    border: 1px solid #e0e0e0; /* Borde suave para cada menú */
+    border-radius: 8px; /* Bordes redondeados para cada menú */
+    background-color: #ffffff; /* Fondo blanco para los elementos del menú */
+    transition: transform 0.2s; /* Transición suave para el hover */
+}
+
+.menu-list > div:hover {
+    transform: translateY(-5px); /* Efecto de elevar el menú al pasar el ratón */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra más profunda al pasar el ratón */
+}
+
+.menu-list p {
+    color: #555; /* Color del texto más claro */
+    line-height: 1.6; /* Mejora el espaciado entre líneas */
+}

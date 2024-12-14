@@ -1,0 +1,47 @@
+/* CreateMenu.css */
+
+.create-menu-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field {
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+button {
+    align-self: flex-start;
+}
+
+@media (max-width: 600px) {
+    .form-group {
+        flex-direction: column;
+    }
+
+    .form-field {
+        margin-bottom: 12px;
+    }
+}

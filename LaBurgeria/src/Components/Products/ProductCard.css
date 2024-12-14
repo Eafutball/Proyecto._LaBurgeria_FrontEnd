@@ -1,0 +1,102 @@
+/* ProductCard.css */
+
+.product-card-container {
+    display: flex;
+    justify-content: center; /* Centra la tarjeta en su contenedor */
+    margin: 20px; /* Espaciado alrededor de la tarjeta */
+  }
+  
+  .product-card {
+    width: 300px; /* Ancho fijo para una apariencia uniforme */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada para mayor profundidad */
+    border-radius: 12px; /* Bordes redondeados más suaves */
+    overflow: hidden; /* Evita que el contenido sobresalga */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave al pasar el mouse */
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05); /* Efecto de escalado al pasar el mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa en hover */
+  }
+  
+  .image-container {
+    height: 200px; /* Altura fija para la imagen */
+  }
+  
+  .product-image {
+    height: 100%; /* Ocupa toda la altura del contenedor */
+    width: 100%; /* Ocupa toda la anchura del contenedor */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+  }
+  
+  .text-container {
+    margin-top: 10px; /* Espaciado superior para el texto */
+  }
+  
+  .name-price-container {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre nombre y precio */
+    align-items: center; /* Alinea verticalmente el texto */
+  }
+  
+  .product-name {
+    font-weight: bold; /* Negrita para el nombre del producto */
+    font-size: 1.25rem; /* Tamaño de fuente ajustado */
+  }
+  
+  .price {
+    color: #4CAF50; /* Color verde para el precio */
+    font-weight: 600; /* Peso de la fuente más grueso */
+    font-size: 1.1rem; /* Tamaño de fuente ajustado */
+  }
+  
+  .description-container {
+    margin: 10px 0; /* Espaciado vertical para la descripción */
+  }
+  
+  .product-description {
+    color: #555; /* Color gris para el texto de la descripción */
+    line-height: 1.5; /* Mejora la legibilidad */
+    font-size: 0.9rem; /* Tamaño de fuente ajustado */
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column; /* Coloca los botones en columna */
+    gap: 10px; /* Espaciado entre botones */
+    margin-top: 10px; /* Espaciado superior para separar botones del contenido */
+  }
+  
+  .product-button {
+    width: 100%; /* Botones ocupan todo el ancho del contenedor */
+    padding: 10px; /* Espaciado interno en los botones */
+    font-size: 0.9rem; /* Tamaño de fuente ajustado */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+  }
+  
+  .product-button:hover {
+    opacity: 0.9; /* Efecto de opacidad al pasar el mouse */
+  }
+  
+  @media (max-width: 768px) {
+    .product-card {
+      width: 100%; /* Ancho completo en pantallas pequeñas */
+      margin: 10px; /* Espaciado reducido en móviles */
+    }
+  
+    .product-name {
+      font-size: 1.1rem; /* Tamaño de fuente ajustado para móviles */
+    }
+  
+    .price {
+      font-size: 1rem; /* Tamaño de fuente ajustado para móviles */
+    }
+  
+    .product-description {
+      font-size: 0.85rem; /* Tamaño de fuente ajustado para móviles */
+    }
+  
+    .product-button {
+      font-size: 0.8rem; /* Tamaño de fuente ajustado para botones en móviles */
+    }
+  }

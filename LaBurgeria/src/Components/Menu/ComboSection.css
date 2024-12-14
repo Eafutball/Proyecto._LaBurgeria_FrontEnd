@@ -1,0 +1,90 @@
+.combo-section {
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo claro para contraste */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+  .combo-section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Color oscuro para el título */
+    text-align: center; /* Centra el título */
+  }
+  
+  .combo-list {
+    display: grid; /* Usar grid para una mejor disposición */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive */
+    gap: 20px; /* Espacio entre los combos */
+  }
+  
+  .combo-item {
+    background-color: #fff; /* Fondo blanco para cada combo */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Esconde el desbordamiento */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.2s; /* Transición suave para el hover */
+  }
+  
+  .combo-item:hover {
+    transform: scale(1.02); /* Efecto de hover */
+  }
+  
+  .combo-image-container {
+    width: 100%;
+    height: 150px; /* Altura fija para las imágenes */
+    overflow: hidden; /* Esconde el desbordamiento */
+  }
+  
+  .combo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    transition: opacity 0.2s; /* Transición suave para la imagen */
+  }
+  
+  .combo-details {
+    padding: 15px; /* Espaciado interno */
+  }
+  
+  .combo-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50; /* Color de texto para el nombre */
+    margin-bottom: 5px; /* Espacio debajo del nombre */
+  }
+  
+  .combo-price {
+    font-size: 16px;
+    color: #e74c3c; /* Color para el precio */
+    margin-bottom: 5px; /* Espacio debajo del precio */
+  }
+  
+  .combo-description {
+    font-size: 14px;
+    color: #7f8c8d; /* Color de texto para la descripción */
+    line-height: 1.5; /* Espaciado entre líneas */
+  }
+  
+  .loading-container,
+  .error-container,
+  .no-combos {
+    text-align: center; /* Centrar el texto */
+    color: #555; /* Color de texto para mensajes */
+  }
+  
+  .loading-container p {
+    font-size: 16px; /* Tamaño de fuente para el mensaje de carga */
+  }
+  
+  .error-container p {
+    font-size: 16px; /* Tamaño de fuente para mensajes de error */
+    color: #c0392b; /* Color rojo para errores */
+  }
+  
+  .no-combos {
+    font-size: 16px; /* Tamaño de fuente para no hay combos */
+    color: #95a5a6; /* Color gris claro */
+  }
+  

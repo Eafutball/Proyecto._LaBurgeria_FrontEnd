@@ -1,0 +1,81 @@
+/* MenuItem.css */
+
+.menu-item {
+    background-color: #f9f9f9; /* Color de fondo claro */
+    border: 1px solid #ddd; /* Borde ligero */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 16px; /* Espaciado interno */
+    margin: 16px 0; /* Margen vertical */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.2s; /* Transición suave al hover */
+}
+
+.menu-item:hover {
+    transform: translateY(-2px); /* Efecto de elevación al pasar el cursor */
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between; /* Espacio entre título y categoría */
+    align-items: center; /* Alinear verticalmente */
+}
+
+.menu-title {
+    font-size: 1.5em; /* Tamaño de fuente más grande */
+    color: #333; /* Color del texto */
+    margin: 0; /* Sin margen */
+}
+
+.menu-category {
+    background-color: #007bff; /* Color de fondo de la categoría */
+    color: #fff; /* Color del texto de la categoría */
+    padding: 4px 8px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    font-weight: bold; /* Negrita */
+}
+
+.menu-description-container {
+    margin: 12px 0; /* Margen superior e inferior */
+}
+
+.menu-description {
+    font-size: 1em; /* Tamaño de fuente normal */
+    color: #666; /* Color del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+.menu-day-container {
+    font-weight: bold; /* Negrita para el día */
+    margin: 8px 0; /* Margen vertical */
+}
+
+.availability-container {
+    margin: 16px 0; /* Margen vertical */
+}
+
+.activate-button-container,
+.update-button-container {
+    margin-top: 16px; /* Margen superior */
+}
+
+.activate-button,
+.update-button {
+    background-color: #28a745; /* Color verde para el botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Cursor de mano al pasar */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+    font-size: 1em; /* Tamaño de fuente */
+}
+
+.activate-button:hover,
+.update-button:hover {
+    background-color: #218838; /* Color más oscuro al pasar el cursor */
+}
+
+.activate-button:disabled {
+    background-color: #6c757d; /* Color gris para el botón deshabilitado */
+    cursor: not-allowed; /* Cursor de no permitido */
+}

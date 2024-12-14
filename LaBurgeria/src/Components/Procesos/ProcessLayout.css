@@ -1,0 +1,80 @@
+/* ProcessLayout.css */
+
+.process-layout {
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .banner-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para el banner */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para el banner */
+  }
+  
+  .title-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .title-container h1 {
+    font-size: clamp(1.5rem, 2.5vw + 1rem, 2.5rem); /* Texto responsivo */
+    color: #222; /* Color más oscuro para el título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+  }
+  
+  .create-process-button {
+    padding: 10px 20px;
+    font-size: clamp(0.9rem, 1.5vw + 0.5rem, 1.2rem); /* Tamaño de fuente responsivo */
+    background-color: #555; /* Color oscuro para el botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+  }
+  
+  .create-process-button:hover {
+    background-color: #444; /* Color aún más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+  }
+  
+  .content-container {
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+  }
+  
+  .loading-container,
+  .error-container,
+  .no-products-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .loading-container p,
+  .error-container p,
+  .no-products-container p {
+    font-size: clamp(1rem, 1.5vw + 0.5rem, 1.2rem); /* Texto responsivo */
+    color: #555; /* Texto gris para mensajes */
+  }
+  
+  .product-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Estilo adicional para mejorar la accesibilidad */
+  .create-process-button:focus {
+    outline: none; /* Elimina el contorno predeterminado */
+    box-shadow: 0 0 0 3px rgba(85, 85, 85, 0.5); /* Sombra de enfoque con tono oscuro */
+  }

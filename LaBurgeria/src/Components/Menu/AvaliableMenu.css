@@ -1,0 +1,75 @@
+/* AvailableMenu.css */
+
+.available-menu {
+    padding: 20px; /* Espacio alrededor del contenido del menú */
+    border-radius: 10px; /* Bordes redondeados más suaves */
+    max-width: 800px; /* Ancho máximo del menú */
+    margin: 20px auto; /* Centrar el menú en la página */
+}
+
+.available-menu-title {
+    font-size: clamp(24px, 4vw + 2rem, 28px); /* Tamaño de fuente adaptable */
+    font-weight: bold; /* Negrita para el título */
+    margin-bottom: 20px; /* Espacio inferior */
+    color: #2c3e50; /* Color del título principal */
+    text-align: center; /* Centrar el título */
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column; /* Disposición vertical de los elementos */
+    gap: 20px; /* Espaciado entre los elementos */
+}
+
+.loading-message-container,
+.error-message-container {
+    text-align: center; /* Centrar el texto en mensajes de carga y error */
+}
+
+.menu-info {
+    margin-bottom: 20px; /* Espacio inferior para la información del menú */
+    padding: 15px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.availability-container {
+    margin-top: 10px; /* Espacio superior para la disponibilidad */
+}
+
+.menu-sections {
+    display: flex;
+    flex-direction: column; /* Disposición vertical para secciones */
+    gap: 20px; /* Espaciado entre secciones */
+}
+
+.combo-section-container,
+.product-section-container {
+    padding: 15px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.combo-section-title,
+.product-section-title {
+    font-size: clamp(18px, 3vw + 1rem, 22px); /* Tamaño de fuente adaptable para títulos de sección */
+    font-weight: bold; /* Negrita para títulos de sección */
+    margin-bottom: 10px; /* Espacio inferior */
+    color: #555; /* Color para títulos de sección */
+}
+
+.combo-section-content,
+.product-section-content {
+    padding: 10px; /* Espacio interno para contenido de secciones */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f5f5f5; /* Fondo suave para contenido */
+}
+
+/* Estilos para mensajes de carga y error */
+.loading-message,
+.error-message {
+    font-size: clamp(14px, 2vw + 1rem, 16px); /* Tamaño de fuente adaptable para mensajes */
+    color: #888; /* Color para mensajes */
+}
+
+.error-message {
+    color: #e74c3c; /* Color rojo para mensajes de error */
+}

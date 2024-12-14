@@ -1,0 +1,115 @@
+/* ProductDetail.css */
+
+.container_box {
+    display: flex; /* Usar flex para organizar el contenido */
+    flex-direction: column; /* Disposición vertical */
+    align-items: center; /* Centrar horizontalmente */
+    min-height: 100vh; /* Altura mínima para ocupar toda la pantalla */
+}
+
+.product-detail {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    width: 100%; /* Ancho completo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Ocultar desbordes */
+}
+
+.banner-image {
+    width: 100%; /* Ancho completo de la imagen del banner */
+    height: auto; /* Mantener proporción de la imagen */
+}
+
+.product-detail__content {
+    padding: 20px; /* Espaciado interno en el contenido del producto */
+}
+
+.product-detail__header {
+    display: flex; /* Usar flex para organizar la cabecera */
+    align-items: center; /* Centrar verticalmente */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.product-detail__image-container {
+    flex: 1; /* Permitir que la imagen ocupe espacio */
+}
+
+.product-detail__image {
+    width: 100%; /* Ancho completo de la imagen del producto */
+    max-width: 300px; /* Ancho máximo de la imagen del producto */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-right: 20px; /* Espacio a la derecha */
+}
+
+.product-detail__info {
+    flex: 2; /* Permitir que la información ocupe más espacio */
+}
+
+.product-detail__name {
+    font-size: clamp(2rem, 5vw + 1rem, 2.5rem); /* Tamaño de fuente adaptable */
+    color: #333; /* Color oscuro para el nombre */
+    margin: 0; /* Sin margen */
+}
+
+.product-detail__main {
+    margin-top: 20px; /* Margen superior */
+}
+
+.product-detail__description-container {
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.product-detail__description {
+    font-size: 1rem; /* Tamaño de fuente para la descripción */
+    color: #333; /* Color oscuro para el nombre */
+}
+
+.product-detail__price-container {
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.product-detail__price {
+    font-size: 1.5rem; /* Tamaño de fuente para el precio */
+    color: #333; /* Color oscuro para el nombre */
+}
+
+.product-detail__category-container {
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.product-detail__category {
+    font-size: 1rem; /* Tamaño de fuente para la categoría */
+    color: #333; /* Color oscuro para el nombre */
+}
+
+.product-detail__footer {
+    margin-top: 20px; /* Margen superior */
+}
+
+.product-detail__ingredients-title {
+    font-size: 1.5rem; /* Tamaño de fuente para el título de ingredientes */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+.product-detail__ingredients-list {
+    list-style: none; /* Eliminar estilo de lista */
+    padding: 0; /* Eliminar padding */
+}
+
+.product-detail__ingredient {
+    padding: 10px; /* Relleno interno */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 5px; /* Margen inferior entre ingredientes */
+}
+
+@media (max-width: 600px) {
+    .product-detail__header {
+        flex-direction: column; /* Cambiar a disposición vertical en pantallas pequeñas */
+        align-items: flex-start; /* Alinear al inicio */
+    }
+
+    .product-detail__image {
+        margin-right: 0; /* Eliminar margen derecho en pantallas pequeñas */
+        margin-bottom: 15px; /* Espacio inferior en lugar de derecho */
+    }
+}

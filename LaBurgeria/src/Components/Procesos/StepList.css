@@ -1,0 +1,60 @@
+/* Contenedor principal de la lista de pasos */
+.step-list-container {
+    background-color: #f8f9fa; /* Fondo claro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-width: 600px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+/* Estilo del encabezado de la lista */
+.step-list-header {
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+.step-list-header h3 {
+    font-size: 24px; /* Tamaño de fuente del encabezado */
+    color: #333; /* Color del texto */
+    margin: 0; /* Sin margen */
+}
+
+/* Contenedor del contenido de la lista */
+.step-list-content {
+    max-height: 400px; /* Altura máxima para el contenido */
+    overflow-y: auto; /* Desplazamiento vertical si es necesario */
+}
+
+/* Lista de pasos */
+.step-list {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margen */
+}
+
+/* Estilo de cada elemento de la lista */
+.step-item-wrapper {
+    background-color: #ffffff; /* Fondo blanco para cada paso */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-bottom: 10px; /* Espaciado entre elementos */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.2s; /* Transición suave al pasar el ratón */
+}
+
+.step-item-wrapper:hover {
+    transform: scale(1.02); /* Escala al pasar el ratón */
+}
+
+/* Estilos para el contenido de StepItem (puedes ajustarlo según necesites) */
+.step-item-wrapper h4 {
+    margin: 0; /* Sin margen */
+    font-size: 18px; /* Tamaño de fuente para el nombre de la estación */
+    color: #007bff; /* Color azul para el texto */
+}
+
+.step-item-wrapper p {
+    margin: 5px 0 0; /* Margen superior */
+    color: #666; /* Color gris para el texto */
+}

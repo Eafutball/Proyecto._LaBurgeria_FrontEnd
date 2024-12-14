@@ -1,0 +1,41 @@
+/* MenuFormLayout.css */
+
+.container {
+    margin-top: 2rem; /* Margin above the container */
+    margin-bottom: 2rem; /* Margin below the container */
+}
+
+.paper {
+    padding: 2rem; /* Padding inside the Paper component */
+    border-radius: 8px; /* Rounded corners for the Paper component */
+    background-color: #ffffff; /* White background for contrast */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.title {
+    margin-bottom: 1rem; /* Space below the title */
+}
+
+.divider {
+    margin: 1rem 0; /* Margin above and below the divider */
+}
+
+.subtitle {
+    margin-bottom: 0.5rem; /* Space below subtitles */
+    color: #555; /* Dark gray for subtitle text */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .paper {
+        padding: 1rem; /* Reduce padding on smaller screens */
+    }
+
+    .title {
+        font-size: 1.8rem; /* Slightly smaller title font on small screens */
+    }
+
+    .subtitle {
+        font-size: 1.2rem; /* Smaller subtitle font on small screens */
+    }
+}

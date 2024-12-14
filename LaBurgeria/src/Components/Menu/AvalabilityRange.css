@@ -1,0 +1,33 @@
+/* AvailabilityRange.css */
+
+.availability-range-container {
+    padding: 15px; /* Espaciado interno */
+    background-color: #f1f1f1; /* Fondo claro para el contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 10px 0; /* Margen superior e inferior */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.availability-range-container:hover {
+    background-color: #e9e9e9; /* Fondo más oscuro al pasar el mouse */
+}
+
+.availability-range {
+    display: flex; /* Flexbox para centrar contenido */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.availability-text {
+    color: #333; /* Color oscuro para el texto */
+    font-size: clamp(1rem, 2vw, 1.25rem); /* Tamaño de fuente adaptable */
+    margin: 0; /* Eliminar márgenes por defecto */
+    font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .availability-text {
+        font-size: clamp(0.875rem, 3vw, 1rem); /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+}

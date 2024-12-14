@@ -1,0 +1,75 @@
+.footer-wrapper {
+    margin: 6rem 0; /* Espacio superior e inferior */
+    display: flex;
+    flex-direction: column; /* Estructura en columna */
+    align-items: center; /* Centra el contenido */
+    padding: 2rem; /* Añade un poco de espacio interno */
+    font-family: "Montserrat", sans-serif; 
+}
+
+.footer-logo-container {
+    max-width: 110px; /* Tamaño máximo del logo */
+    margin-bottom: 2rem; /* Espacio inferior del logo */
+}
+
+.footer-icons {
+    margin-top: 2rem; /* Espacio superior para los íconos */
+    display: flex; /* Flex para alinear los íconos horizontalmente */
+}
+
+.footer-icons svg {
+    font-size: 1.5rem; /* Tamaño de los íconos */
+    margin-right: 1.25rem; /* Espacio entre los íconos */
+    color: #303030; /* Color de los íconos más fuerte */
+    transition: color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.footer-icons svg:hover {
+    color: #b95f00; /* Color más oscuro y vibrante al pasar el ratón */
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+    filter: drop-shadow(0 0 5px rgba(185, 95, 0, 0.5)); /* Sombra suave al hacer hover */
+}
+
+.footer-section-two {
+    flex: 1; /* Permite que esta sección crezca */
+    display: flex;
+    justify-content: space-between; /* Distribuye columnas */
+    margin-top: 2rem; /* Espacio superior para móviles */
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.footer-section-columns {
+    display: flex;
+    flex-direction: column; /* Estructura en columna */
+    min-width: 150px; /* Ajusta el ancho mínimo */
+}
+
+.footer-section-columns span {
+    margin: 0.5rem 0; /* Aumenta el espaciado entre elementos */
+    font-weight: 600; /* Peso del texto */
+    color: #2e2e2e; /* Color del texto más fuerte */
+    cursor: pointer; /* Cursor en forma de mano */
+    transition: transform 0.3s; /* Transición solo para el movimiento */
+}
+
+.footer-section-columns span:hover {
+    transform: translateY(-2px); /* Levanta ligeramente el texto al hacer hover */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 800px) {
+    .footer-wrapper {
+        padding: 1rem; /* Reduce el padding en móviles */
+    }
+
+    .footer-section-two {
+        flex-direction: column; /* Cambia a columna en móviles */
+        align-items: center; /* Centra el contenido */
+        margin-top: 1rem; /* Espacio adicional en móviles */
+    }
+
+    .footer-section-columns {
+        margin: 1rem 0; /* Espaciado vertical entre columnas */
+        text-align: center; /* Centra el texto en columnas */
+    }
+}

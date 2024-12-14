@@ -1,0 +1,58 @@
+/* ComboForm.css */
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para el banner */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+  }
+  
+  h5 {
+    font-weight: bold;
+    text-align: center; /* Centrar el título */
+    margin-bottom: 16px; /* Espacio debajo del título */
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    border-radius: 4px; /* Bordes redondeados para los inputs */
+    padding: 10px; /* Espaciado interno */
+  }
+  
+  .MuiFormControl-root {
+    margin-bottom: 16px; /* Espacio debajo de los formularios */
+  }
+  
+  .MuiButton-root {
+    width: 100%; /* Botón ocupa el ancho completo */
+    border-radius: 4px; /* Bordes redondeados para el botón */
+    padding: 10px; /* Espaciado interno del botón */
+  }
+  
+  .MuiChip-root {
+    margin: 4px; /* Espacio entre chips */
+  }
+  
+  .Toastify__toast--success {
+    background-color: #4caf50; /* Color de fondo para mensajes de éxito */
+  }
+  
+  .Toastify__toast--error {
+    background-color: #f44336; /* Color de fondo para mensajes de error */
+  }
+  
+  /* Media queries para responsividad */
+  @media (max-width: 600px) {
+    .banner-image {
+      margin-bottom: 10px; /* Espacio ajustado en pantallas más pequeñas */
+    }
+  
+    h5 {
+      font-size: 1.5rem; /* Tamaño de fuente ajustado para pantallas más pequeñas */
+    }
+  
+    .MuiButton-root {
+      padding: 8px; /* Espaciado interno ajustado para el botón */
+    }
+  }
+  

@@ -1,0 +1,146 @@
+.layout-products {
+    position: relative; /* Para que los elementos se posicionen en relación con este contenedor */
+    overflow: hidden; /* Evitar que el contenido se desborde */
+    min-height: 100vh; /* Asegurarse de que el contenedor ocupe toda la altura de la ventana */
+}
+
+/* Estilo para la imagen del banner */
+.banner-image {
+    width: 100vw; /* Asegura que la imagen ocupe todo el ancho de la ventana */
+    height: 100vh; /* Asegura que la imagen ocupe toda la altura de la ventana */
+    position: fixed; /* Mantener la imagen fija al fondo */
+    top: 0; /* Alinea la imagen en la parte superior */
+    left: 0; /* Alinea la imagen a la izquierda */
+    z-index: -1; /* Asegura que la imagen esté detrás del contenido */
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin distorsionarse */
+}
+
+/* Estilo para el contenedor principal del contenido */
+.layout-main {
+    position: relative; /* Para que el contenido esté por encima del banner */
+    padding: 20px; /* Espaciado interno */
+    color: #333; /* Color de texto general */
+    font-family: 'Montserrat', sans-serif; /* Aplicar la fuente Montserrat */
+    background-color: transparent; /* Sin fondo */
+}
+
+/* Estilo para el encabezado */
+.layout-header {
+    color: #333; /* Color del texto */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centra el texto */
+}
+
+.layout-header h1 {
+    margin: 0; /* Eliminar margen */
+    font-size: 2.5rem; /* Tamaño de fuente grande */
+    font-weight: 700; /* Peso de fuente */
+}
+
+.layout-header p {
+    font-size: 1.2rem; /* Tamaño de fuente del párrafo */
+}
+
+/* Estilo para mensajes de carga y error */
+.layout-main p {
+    font-size: 1.2rem; /* Tamaño de fuente para los mensajes */
+    color: #666; /* Color de texto suave */
+    text-align: center; /* Centra el texto */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+/* Estilos para la sección de información */
+.info-section {
+    background-color: rgba(224, 247, 250, 0.9); /* Color de fondo ligero con opacidad */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 20px 0; /* Margen superior e inferior */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.info-section h2 {
+    color: #333; /* Color del texto del título */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.info-section p {
+    color: #333; /* Color del texto del párrafo */
+}
+
+/* Estilo para el pie de página */
+.layout-footer {
+    background-color: #3f51b5; /* Color de fondo del pie */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    padding: 10px; /* Espaciado interno */
+}
+
+.button-container {
+    margin: 20px 0; /* Espaciado alrededor de los botones */
+    display: flex;
+    justify-content: center; /* Centrar los botones */
+    gap: 15px; /* Espacio entre los botones */
+}
+
+.btn-create,
+.btn-update {
+    padding: 12px 24px; /* Espaciado interno aumentado para un botón más grande */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados más pronunciados */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #fff; /* Color del texto */
+    background-color: #3498db; /* Color de fondo */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Transiciones suaves para color y tamaño */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para darle profundidad */
+}
+
+.btn-create:hover,
+.btn-update:hover {
+    background-color: #2980b9; /* Color más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el mouse */
+}
+
+/* Estilo para el texto del botón */
+.btn-create:focus,
+.btn-update:focus {
+    outline: none; /* Eliminar el contorno por defecto del foco */
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5); /* Añadir un contorno de foco personalizado */
+}
+
+
+.button-wrapper {
+    flex: 1; /* Permitir que los divs ocupen espacio equitativamente */
+    display: flex;
+    justify-content: center; /* Centrar el botón dentro del div */
+    align-items: center; /* Centrar verticalmente el contenido */
+    max-width: 200px; /* Limitar el ancho máximo de cada botón */
+    margin: 0 10px; /* Espaciado lateral para separar los botones */
+    transition: transform 0.2s; /* Transición suave para efectos */
+}
+
+.button-wrapper:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .layout-main {
+        padding: 10px; /* Reduce el espaciado en pantallas pequeñas */
+    }
+
+    .layout-main p {
+        font-size: 1rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    }
+
+    .button-container {
+        flex-direction: column; /* Apilar los botones en pantallas más pequeñas */
+        gap: 10px; /* Espacio reducido entre botones */
+    }
+
+    .search-bar {
+        width: 100%; /* La barra de búsqueda ocupa todo el ancho en pantallas pequeñas */
+        max-width: none; /* Sin ancho máximo */
+    }
+}

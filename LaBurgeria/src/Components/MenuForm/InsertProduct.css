@@ -1,0 +1,43 @@
+/* InsertProduct.css */
+
+/* Estilo para el contenedor principal */
+.insert-product-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los títulos */
+.insert-product-title {
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+/* Estilo para el mensaje de error */
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+/* Estilo para los botones */
+.insert-product-button {
+    margin-top: 16px;
+}
+
+/* Estilo para las tarjetas de productos */
+.product-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto hover para las tarjetas de productos */
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el texto secundario de las tarjetas */
+.product-card-description {
+    color: #757575; /* Color gris para el texto secundario */
+}

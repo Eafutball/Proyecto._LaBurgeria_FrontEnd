@@ -1,0 +1,27 @@
+/* ProductGrid.css */
+
+.grid-container {
+    padding: 20px; /* Espaciado interno del contenedor */
+}
+
+.product-card {
+    display: flex; /* Usar flex para la tarjeta */
+    flex-direction: column; /* Disposición vertical */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease; /* Transición suave para aumento */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        padding: 10px; /* Espaciado reducido en pantallas pequeñas */
+    }
+}
+
+.product-card-container {
+    margin-bottom: 15px; /* Margen inferior entre tarjetas */
+}

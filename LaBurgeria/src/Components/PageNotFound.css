@@ -1,0 +1,50 @@
+.page-not-found-container {
+  display: flex; /* Usar Flexbox para centrar el contenido */
+  flex-direction: column; /* Colocar elementos en columna */
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente */
+  height: 100vh; /* Tomar toda la altura de la ventana */
+  background-color: #f8f9fa; /* Color de fondo suave */
+  text-align: center; /* Centrar texto */
+  padding: 20px; /* Espaciado alrededor del contenedor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.page-not-found-header h1 {
+  font-size: 3rem; /* Tamaño del encabezado */
+  color: #dc3545; /* Color del texto (rojo) */
+  margin-bottom: 20px; /* Espaciado debajo del encabezado */
+}
+
+.page-not-found-message p {
+  font-size: 1.5rem; /* Tamaño del mensaje */
+  margin: 10px 0 20px; /* Espaciado alrededor del mensaje */
+  color: #343a40; /* Color del texto (gris oscuro) */
+}
+
+.page-not-found-link .home-link {
+  font-size: 1.2rem; /* Tamaño del enlace */
+  color: #007bff; /* Color del enlace (azul) */
+  text-decoration: none; /* Sin subrayado */
+  transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+.page-not-found-link .home-link:hover {
+  text-decoration: underline; /* Subrayado en hover */
+  color: #0056b3; /* Color más oscuro en hover */
+}
+
+/* Animación al cargar */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.page-not-found-container {
+  animation: fadeIn 0.5s; /* Añadir animación de desvanecimiento */
+}

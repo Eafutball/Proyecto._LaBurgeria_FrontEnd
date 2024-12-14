@@ -1,0 +1,50 @@
+.product-select {
+    margin-bottom: 20px; /* Espaciado inferior */
+  }
+  
+  .product-select label {
+    display: block; /* Asegura que la etiqueta ocupe toda la línea */
+    margin-bottom: 8px; /* Espaciado debajo de la etiqueta */
+    font-weight: bold; /* Negrita para las etiquetas */
+    color: #333; /* Color del texto */
+  }
+  
+  .react-select__control {
+    border: 1px solid #ccc; /* Borde ligero */
+    border-radius: 4px; /* Esquinas redondeadas */
+    box-shadow: none; /* Sin sombra */
+    padding: 5px; /* Espaciado interno */
+    transition: border-color 0.3s; /* Transición suave para el borde */
+  }
+  
+  .react-select__control--is-focused {
+    border-color: #007bff; /* Color del borde cuando está enfocado */
+    box-shadow: 0 0 0 1px rgba(0, 123, 255, 0.5); /* Sombra al enfocar */
+  }
+  
+  .react-select__menu {
+    border-radius: 4px; /* Esquinas redondeadas para el menú */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para el menú desplegable */
+  }
+  
+  .react-select__option {
+    padding: 10px; /* Espaciado interno para las opciones */
+  }
+  
+  .react-select__option--is-focused {
+    background-color: #007bff; /* Color de fondo al pasar el cursor */
+    color: white; /* Color del texto al pasar el cursor */
+  }
+  
+  .react-select__option--is-selected {
+    background-color: #0056b3; /* Color de fondo para la opción seleccionada */
+    color: white; /* Color del texto para la opción seleccionada */
+  }
+  
+  .react-select__placeholder {
+    color: #999; /* Color del texto del placeholder */
+  }
+  
+  .react-select__single-value {
+    color: #333; /* Color del texto seleccionado */
+  }

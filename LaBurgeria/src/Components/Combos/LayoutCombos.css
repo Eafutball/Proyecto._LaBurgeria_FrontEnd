@@ -1,0 +1,70 @@
+/* Layout principal */
+.layout-combos {
+    text-align: center;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-image {
+    width: 100vw; /* Asegura que la imagen ocupe todo el ancho de la ventana */
+    height: 100vh; /* Asegura que la imagen ocupe toda la altura de la ventana */
+    position: fixed; /* Mantener la imagen fija al fondo */
+    top: 0; /* Alinea la imagen en la parte superior */
+    left: 0; /* Alinea la imagen a la izquierda */
+    z-index: -1; /* Asegura que la imagen esté detrás del contenido */
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin distorsionarse */
+}
+
+.layout-header {
+    margin-top: 20px;
+}
+
+.layout-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.layout-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Botón Crear Combo */
+.create-combo-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.create-combo-button:hover {
+    background-color: #ff3b3b;
+}
+
+.create-combo-button:active {
+    transform: scale(0.98);
+}
+
+/* Contenido principal */
+.layout-main {
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Mensaje de carga y error */
+.layout-main p {
+    font-size: 1.1rem;
+    color: #777;
+    margin: 20px 0;
+}

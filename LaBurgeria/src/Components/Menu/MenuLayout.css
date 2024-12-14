@@ -1,0 +1,51 @@
+/* MenuLayout.css */
+
+.menu-layout {
+    display: flex; /* Usar flex para organización del layout */
+    flex-direction: column; /* Colocar contenido en columna */
+    align-items: center; /* Centrar horizontalmente */
+    padding: 20px; /* Espaciado interno */
+}
+
+.menu-content {
+    max-width: 1000px; /* Ancho máximo del contenedor */
+    width: 100%; /* Ancho completo */
+    margin: 0 auto; /* Centrar el contenido */
+}
+
+.banner-image {
+    width: 100%; /* Ancho completo del banner */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+h2 {
+    font-size: clamp(1.8rem, 4vw + 1rem, 2.4rem); /* Tamaño de fuente adaptable */
+    color: #333; /* Color oscuro para el título */
+    margin: 20px 0; /* Margen superior e inferior */
+    text-align: center; /* Centrar texto */
+}
+
+.available-menu {
+    width: 100%; /* Ancho completo */
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
+.menu-list {
+    display: flex; /* Usar flex para la lista de menús */
+    flex-direction: column; /* Colocar menús en columna */
+    gap: 15px; /* Espacio entre los elementos de la lista */
+}
+
+.menu-list-item {
+    background-color: #ffffff; /* Fondo blanco para cada menú */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    transition: box-shadow 0.3s ease; /* Transición suave para sombra */
+}
+
+.menu-list-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
+}

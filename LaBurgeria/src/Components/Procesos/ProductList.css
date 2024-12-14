@@ -1,0 +1,48 @@
+/* Estilos generales para el contenedor de la lista de productos */
+.product-list-container {
+    max-width: 1200px; /* Ancho máximo para el contenedor */
+    margin: 0 auto; /* Centrar el contenedor en la página */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f7f7f7; /* Color de fondo claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
+}
+
+/* Estilos para el encabezado de la lista */
+.product-list-header {
+    text-align: center; /* Centrar el texto del encabezado */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.product-list-header h2 {
+    font-size: 28px; /* Tamaño de fuente del título */
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para la lista de productos */
+.product-list {
+    display: flex; /* Usar flexbox para la lista */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    justify-content: space-between; /* Espaciado uniforme entre elementos */
+}
+
+/* Estilos para cada elemento de producto */
+.product-item-wrapper {
+    flex: 1 1 30%; /* Elementos flexibles que ocupan el 30% del ancho del contenedor */
+    margin: 10px; /* Espaciado entre productos */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.2s; /* Transición suave para hover */
+}
+
+/* Efecto hover para cada producto */
+.product-item-wrapper:hover {
+    transform: scale(1.02); /* Ampliar ligeramente el producto al pasar el ratón */
+}
+
+/* Estilos para el contenedor de productos sin productos */
+.no-products-container {
+    text-align: center; /* Centrar el mensaje */
+    font-weight: bold; /* Negrita */
+    color: red; /* Color del mensaje */
+    margin-top: 20px; /* Espaciado superior */
+}

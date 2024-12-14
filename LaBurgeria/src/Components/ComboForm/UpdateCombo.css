@@ -1,0 +1,46 @@
+/* UpdateCombo.css */
+
+h5 {
+    text-align: center; /* Centra el título del formulario */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #333; /* Color del texto del título */
+  }
+  
+  form {
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  input,
+  select {
+    border-radius: 4px; /* Bordes redondeados para campos de entrada */
+  }
+  
+  input:focus,
+  select:focus {
+    outline: none; /* Elimina el contorno predeterminado al enfocar */
+    border-color: #1976d2; /* Color de borde al enfocar */
+    box-shadow: 0 0 5px rgba(25, 118, 210, 0.5); /* Sombra azul al enfocar */
+  }
+  
+  button {
+    margin-top: 20px; /* Espacio encima del botón */
+    width: 100%; /* Botón ocupa el ancho completo */
+  }
+  
+  .MuiChip-root {
+    margin-right: 4px; /* Espaciado entre chips */
+  }
+  
+  @media (max-width: 600px) {
+    form {
+      padding: 10px; /* Espaciado interno menor en pantallas pequeñas */
+    }
+  
+    h5 {
+      font-size: 1.5rem; /* Tamaño de fuente menor en pantallas pequeñas */
+    }
+  }
+  
